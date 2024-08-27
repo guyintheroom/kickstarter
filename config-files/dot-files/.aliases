@@ -1,0 +1,30 @@
+# General Aliases
+eval $(thefuck --alias)
+alias grep="grep --color=auto"
+alias pokemans="pokemon-colorscripts -r"
+alias redpill="neo-matrix --charset=ascii"
+alias p10k="p10k configure"
+alias ls="ls --color=auto --human-readable -F"
+alias ll="ls -al"
+alias birthday="stat -c %w /"
+alias cat="bat --style=plain --paging=never"
+alias show-aliases="cat ~/.aliases"
+alias storage="df -h"
+alias spacesniffer="dust -r"
+alias fix-discord="discord-update-skip"
+
+# Arch Specific
+alias rate-mirrors="rate-mirrors arch | sudo tee /etc/pacman.d/mirrorlist && clear && echo Mirrors Have Been Rated and Updated!"
+alias archbtw="~/.repo-resources/update-script.sh"
+
+# Debian Specific
+alias safe-nala="sudo timeshift --create --comments update && sudo nala update && sudo nala upgrade"
+
+# Terminal Updating
+# alias zsh-pull="cp -rT ~/all-the-things/config-files/dot-files/.zshrc ~/.zshrc && alias-pull && zsh"
+# alias bash-pull="cp -rT ~/all-the-things/config-files/dot-files/.bashrc ~/.bashrc && alias-pull && bash"
+# alias alias-pull="cp -rT ~/all-the-things/config-files/dot-files/.aliases ~/.aliases"
+
+# Setting Default Terminal
+alias default-zsh="chsh -s /usr/bin/zsh && echo Full Logout is Required!"
+alias default-bash="chsh -s /usr/bin/bash && echo Full Logout is Required!"
